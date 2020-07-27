@@ -43,6 +43,7 @@ class Driver:
 		'url': 'localhost',
 		'port': 8065,
 		'basepath': '/api/v4',
+		'origin': None,
 		'verify': True,
 		'timeout': 30,
 		'request_timeout': None,

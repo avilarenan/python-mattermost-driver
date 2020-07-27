@@ -44,6 +44,7 @@ class Websocket:
 		websocket = await websockets.connect(
 			url,
 			ssl=context,
+			origin=self.options['origin']
 		)
 
 		await self._authenticate_websocket(websocket, event_handler)
